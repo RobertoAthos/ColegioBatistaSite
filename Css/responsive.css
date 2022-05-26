@@ -22,6 +22,9 @@
     nav,.btn{
         display: none;
     }
+    #menu-1 img{
+        display: none;
+    }
     #menu-mobile{
         display: block;
         margin-right: 5rem;
@@ -63,9 +66,7 @@
     #container-text{
         max-width: 400px;
     }
-    input[type=submit]{
-        width: 400px;
-    }
+
 }
 @media(max-width:425px){
     #menu-mobile{
@@ -80,19 +81,14 @@
     .dd-text{
         max-width: 300px;
     }
-    input[type=email]{
-        width: 300px;
-    }
-    input[type=submit]{
-        width: 300px;
-    }
+
 }
-@media(max-width:375px){
+@media(max-width:390px){
     #hero-text{
-        max-width: 350px;
+        max-width: 380px;
     }
     .card{
-        max-width: 250px;
+        max-width: 300px;
         height: 350px;
     }
     #container-text{
@@ -119,10 +115,5 @@
     #news-text{
         margin-top: 30px;
     }
-    input[type=email]{
-        width: 250px;
-    }
-    input[type=submit]{
-        width: 250px;
-    }
+
 }
