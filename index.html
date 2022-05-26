@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="Css/responsive.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Colégio Batista | Web</title>
+  </head>
+  <body>
+    <!-- Cabeçalho com menu e botões-->
+    <header>
+      <div id="header-container">
+        <div id="menu-1">
+          <a href="#hero"><h1>Colégio Batista</h1></a>
+          <nav>
+            <ul>
+              <li>
+                <a href="#hero">Home</a>
+                <a href="#">Contato</a>
+                <a href="#cards">Ensino</a>
+                <a href="#partner">Anglo</a>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+        <div id="menu-mobile">
+          <div class="line-toggle"></div>
+          <div class="line-toggle"></div>
+          <div class="line-toggle"></div>
+        </div>
+        <div id="mobile-links" >
+          <nav>
+            <ul>
+              <li>
+                <a href="#hero">Home</a>
+                <a href="#">Contato</a>
+                <a href="#cards">Ensino</a>
+                <a href="#partner">Anglo</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="btn">
+          <div>
+            <a href="#">Login</a>
+            <a href="#" id="active">Cadastro</a>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+
+    <!-- Primeira sessão do site-->
+    <section id="hero">
+      <div id="container-hero">
+        <div id="hero-text">
+          <span>Estude com a gente !</span>
+          <h2>+DE 600 ALUNOS CONFIAM NO NOSSO SISTEMA</h2>
+          <p>
+            Nova estrututa, inovação, tecnologia e investimentos. Mais seguro,
+            contemporâneo, preparado para atender as demandas e exigências de um
+            novo mundo.
+          </p>
+          <div>
+            <a href="#"><button class="active">Contato</button></a>
+            <a href="#"><button>Redes Sociais</button></a>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="Assets/garota.png"
+            alt="imagem de uma garota estudante"
+            id="girl"
+          />
+        </div>
+      </div>
+
+      <div id="cards">
+        <div class="card">
+          <img
+            class="icon"
+            src="Assets/icon1.png"
+            alt="imagem de chapéu de formatura"
+          />
+          <h3>Professores<br />Qualificados</h3>
+          <div class="line"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="icon"
+            src="Assets/icon2.png"
+            alt="imagem de chapéu de formatura"
+          />
+          <h3>Projeto das<br />Profissões</h3>
+          <div class="line"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,</p>
+        </div>
+
+        <div class="card">
+          <img
+            class="icon"
+            src="Assets/icon3.png"
+            alt="imagem de chapéu de formatura"
+          />
+          <h3>Preparatório para o<br />Enem/Vestibular</h3>
+          <div class="line"></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segunda sessão do site-->
+    <section id="features">
+      <div id="container-text">
+        <div class="line"></div>
+        <h2>
+          Do Maternal até o <br />
+          Ensino Médio
+        </h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+          aperiam atque delectus soluta beatae et minima necessitatibus ipsam,
+        </p>
+        <div>
+          <a href="#">Entre em Contato -></a
+          ><!--Colocar img da seta na mesma div-->
+        </div>
+      </div>
+
+      <div>
+        <img src="Assets/garoto.png" id="boy" alt="imagem de um garoto estudante" />
+      </div>
+    </section>
+
+    <!-- Terceira sessão do site-->
+    <section id="partner">
+      <div id="container-partner">
+        <div id="partner-text">
+          <h2>Aqui tem Anglo !</h2>
+          <p>
+            O Sistema Anglo de Ensino é um sistema educacional brasileiro e uma
+            empresa que compreende escolas de ensino fundamental e médio
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="Assets/Batista e Anglo logo.jpg"
+            alt="Parceria Batista e Anglo"
+            style="width: 300px"
+          />
+        </div>
+
+        <div id="dropdown">
+          <div class="dd-text">
+            <details>
+              <summary>Porque Anglo?</summary>
+              <div class="text-inside">
+                <p>
+                  O resultado de uma metodologia focada em aprendizagem, em que
+                  o crescimento do aluno é o nosso principal objetivo, não
+                  poderia ser outro:<br /><br />
+                  o Anglo está sempre em destaque nos vestibulares mais
+                  concorridos do Brasil.
+                </p>
+              </div>
+            </details>
+          </div>
+
+          <div class="dd-text">
+            <details>
+              <summary>Plurall</summary>
+              <div class="text-inside">
+                <p>
+                  Plurall é a plataforma de estudos e ensino para coordenadores,
+                  professores, alunos e responsáveis, acessível a qualquer hora
+                  e em qualquer lugar.<br /><br />
+                  São disponibilizadas listas de exercícios para que os alunos
+                  possam praticar o que aprendem em aula, vídeos para ajudar a
+                  solucionar as tarefas e tutores que respondem detalhadamente
+                  as dúvidas que surgem em relação às questões e ao conteúdo do
+                  material didático, que também está disponível.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div>
+          <a href="#">
+            <button>Ver Mais</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quarta sessão do site-->
+    <section id="newslatter">
+      <div id="news-container">
+        <div id="news-text">
+          <span>Newsletter</span>
+          <h2>RECEBA NOTIFICAÇÕES NO SEU EMAIL</h2>
+          <p>
+            Receba datas de provas, matrículas e outros eventos da nossa escola
+          </p>
+
+          <div id="form-notifications">
+            <form>
+              <input
+                type="email"
+                placeholder="Coloque seu email mais apropriado"
+              />
+              <input type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+      ScrollReveal({
+          reset: true,
+          distance: '60px',
+          duration: 1200,
+          delay: 200
+      })
+      ScrollReveal().reveal('#hero', { delay: 100 });
+      ScrollReveal().reveal('.card', { delay: 400 });
+      ScrollReveal().reveal('#partner', { delay: 100 });
+      ScrollReveal().reveal('#features', { delay: 100 });
+      ScrollReveal().reveal('#newslatter', { delay: 100 });
+  </script>
+
+  </body>
+
+  <!-- Rodapé do site-->
+  <footer>
+    <div id="footer-container">
+      <p>Entre em Contato</p>
+      <div id="comunication">
+        <p>Tel:(73) xxx-xxx</p>
+        <p><a href="#">Onde Fica: Rua cova da moça</a></p>
+        <p>Email: colegiobatista@hotmail.com</p>
+      </div>
+    </div>
+  </footer>
+</html>
