@@ -21,7 +21,7 @@
             <ul>
               <li>
                 <a href="#hero">Home</a>
-                <a href="#">Contato</a>
+                <a href="./Page/contato.html">Contato</a>
                 <a href="#cards">Ensino</a>
                 <a href="#partner">Anglo</a>
               </li>
@@ -39,7 +39,7 @@
             <ul>
               <li>
                 <a href="#hero">Home</a>
-                <a href="#">Contato</a>
+                <a href="./Page/contato.html">Contato</a>
                 <a href="#cards">Ensino</a>
                 <a href="#partner">Anglo</a>
                 <a href="#newslatter">Cadastro</a>
@@ -67,11 +67,11 @@
                 <h2>Cadastre-se em nossa <br> lista de E-mail</h2>
                 <p>Receba notificações no seu email datas de provas, matrículas e outros eventos da nossa escola </p>
                 <div id="popup-input">
-                    <form>
-                        <input type="text" placeholder="Seu Nome">
-                        <input type="email" placeholder="Seu Email">
-                        <input type="submit" placeholder="Enviar">
-                    </form>
+                  <form>
+                    <input type="text" placeholder="Seu Nome" name="name">
+                    <input type="email" placeholder="Seu Email" name="email">
+                    <input type="submit" placeholder="Enviar">
+                  </form>
                 </div>
             </div>
           </div>
@@ -235,13 +235,12 @@
           </p>
 
           <div id="form-notifications">
-            <form>
-              <input type="text" placeholder="Seu Nome">
-              <input
-                type="email"
-                placeholder="Seu Email"
-              />
-              <input type="submit" />
+            <form name="NL-Form" onsubmit="return validateForm()">
+              <input type="text" placeholder="Seu Nome" id="name" name="name">
+              <div class="empty-name">Preencha o campo vazio</div>
+              <input type="email" placeholder="Seu Email" id="email" name="email">
+              <div class="empty-email">Preencha o campo com um Email válido (o email está sem o "@" ou o campo está vazio ou email não existe)</div>
+              <input type="submit" placeholder="Enviar" id="send">
             </form>
           </div>
         </div>
@@ -256,11 +255,11 @@
           duration: 1200,
           delay: 200
       })
-      ScrollReveal().reveal('#hero', { delay: 100 });
-      ScrollReveal().reveal('.card', { delay: 400 });
-      ScrollReveal().reveal('#partner', { delay: 100 });
-      ScrollReveal().reveal('#features', { delay: 100 });
-      ScrollReveal().reveal('#newslatter', { delay: 100 });
+      ScrollReveal().reveal('#hero', { delay: 400 });
+      ScrollReveal().reveal('.card', { delay: 700 });
+      ScrollReveal().reveal('#partner', { delay: 400 });
+      ScrollReveal().reveal('#features', { delay: 400 });
+      ScrollReveal().reveal('#newslatter', { delay: 400 });
   </script>
 
   </body>
