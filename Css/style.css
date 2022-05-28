@@ -158,7 +158,7 @@ a {
   color: var(--light-color);
   margin-bottom: 15px;
 }
-#popup-close{
+.popup-close{
   position: absolute;
   right: 35px;
   cursor: pointer;
@@ -417,6 +417,35 @@ input[type="submit"]:hover {
   margin-top: -15px;
   color: red;
   display: none;
+}
+#verification-mobile{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.171);
+  z-index: 10;
+  width: 100%;
+  display: none;
+}
+.verification-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verification-container{
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.verification-container .popup-close{
+  right: 100px;
+  top: 195px;
+}
+.verification-box h2{
+  margin-top: 30px;
 }
 footer {
   background-color: var(---batista-color);

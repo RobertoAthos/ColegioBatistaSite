@@ -59,7 +59,7 @@
     <!-- Popup Cadastro-->
         <div id="popup-background">
           <div id="popup-container">
-            <div id="popup-close">x</div>
+            <div class="popup-close">x</div>
             <div id="popup-img">
               <img src="Assets/svgimg.svg" alt="imagem de livros">
             </div>
@@ -233,7 +233,17 @@
           <p>
             Receba datas de provas, matrículas e outros eventos da nossa escola
           </p>
+            <div id="verification-mobile">
+                <div class="verification-box">
+                  <div class="verification-container">
+                    <div class="verification-box-text">
+                      <div class="popup-close">x</div>
+                      <h2>Seus dados foram enviados<br> com sucesso !</h2>
+                  </div>
 
+                  </div>
+                </div>
+            </div>
           <div id="form-notifications">
             <form name="NL-Form" onsubmit="return validateForm()">
               <input type="text" placeholder="Seu Nome" id="name" name="name">
@@ -259,7 +269,6 @@
       ScrollReveal().reveal('.card', { delay: 700 });
       ScrollReveal().reveal('#partner', { delay: 400 });
       ScrollReveal().reveal('#features', { delay: 400 });
-      ScrollReveal().reveal('#newslatter', { delay: 400 });
   </script>
 
   </body>

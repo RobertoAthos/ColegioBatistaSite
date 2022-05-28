@@ -1,0 +1,13 @@
+
+@media (max-width:760px){
+    nav{
+        display: none;
+    }
+    #menu-mobile{
+        display: block;
+        right: 20px;
+    }
+    #menu-1 img{
+        display: none;
+    }
+}

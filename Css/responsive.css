@@ -66,6 +66,9 @@
     #container-text{
         max-width: 400px;
     }
+    #news-text{
+        margin-top: 30px;
+    }
 
 }
 @media(max-width:425px){
@@ -113,7 +116,7 @@
         width: 250px;
     }
     #news-text{
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
 }

@@ -36,12 +36,12 @@ function validateForm() {
     console.log("Name not Valid");
     errorName.style.display = "block";
   }
-  console.log("name sent");
+  //console.log("name sent");
 
   if (email == "") {
     console.log("Email not Valid");
     errorEmail.style.display = "block";
     return false;
   }
-  console.log("email sent");
+  //console.log("email sent");
 }
