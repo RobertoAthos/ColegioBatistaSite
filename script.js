@@ -16,8 +16,8 @@ btn.addEventListener("click", () => {
 let Openpopup = document.querySelector(".btn");
 let popup = document.querySelector("#popup-background");
 
-Openpopup.addEventListener("click", () => {
-  let x = document.querySelector("#popup-close");
+Openpopup.addEventListener('click', () => {
+  let x = document.querySelector(".popup-close");
   popup.style.display = "block";
   x.addEventListener("click", () => {
     popup.style.display = "none";
@@ -45,3 +45,12 @@ function validateForm() {
   }
   //console.log("email sent");
 }
+
+//Formulários de Contato
+
+let form = document.getElementById('just-contato-form')
+
+form.addEventListener('click', ()=>{
+  var formWindow = document.querySelector("#just-contato")
+  formWindow.style.display = "block"
+})
