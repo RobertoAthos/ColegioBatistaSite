@@ -46,11 +46,15 @@ function validateForm() {
   //console.log("email sent");
 }
 
-//Formulários de Contato
+// Popup Contato
 
-let form = document.getElementById('just-contato-form')
+let contatoWindow = document.querySelector("#contato-background")
+let x = document.querySelector(".popup-close");
+let link = document.querySelector("#contato")
 
-form.addEventListener('click', ()=>{
-  var formWindow = document.querySelector("#just-contato")
-  formWindow.style.display = "block"
+link.addEventListener('click',()=>{
+  contatoWindow.style.display = "block"
+  x.addEventListener('click',()=>{
+      contatoWindow.style.display = "none"
+  })
 })

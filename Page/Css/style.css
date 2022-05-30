@@ -123,21 +123,13 @@ a {
   height: 100vh;
 }
 #just-contato{
-  background-color: white;
+  background-color: var(---batista-color);
   height: 100vh;
   position: absolute;
   top: 90px;
   width: 100%;
-  display: none;
 }
-.popup-close-contact{
-  position: absolute;
-  right: 180px;
-  top: 30px;
-  cursor: pointer;
-  color: var(---batista-color);
-  font-size: 2rem;
-}
+
 #logo img{
   width: 180px;
   margin:20px 0px 15px 0px;
@@ -177,7 +169,12 @@ a {
   flex-direction: column;
   margin-top: 80px;
 }
-
+#text{
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 40px;
+}
 input, textarea {
   width: 500px;
   line-height: 40px;
