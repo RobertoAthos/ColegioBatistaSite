@@ -158,13 +158,14 @@ a {
   color: var(--light-color);
   margin-bottom: 15px;
 }
-.popup-close{
+#popup-close-cadastro,#popup-close-contato{
   position: absolute;
   right: 35px;
   cursor: pointer;
   color: var(---batista-color);
   font-size: 2rem;
 }
+
 #contato-background{
   display: none;
   position: fixed;

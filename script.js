@@ -17,7 +17,7 @@ let Openpopup = document.querySelector(".btn");
 let popup = document.querySelector("#popup-background");
 
 Openpopup.addEventListener('click', () => {
-  let x = document.querySelector(".popup-close");
+  let x = document.querySelector("#popup-close-cadastro");
   popup.style.display = "block";
   x.addEventListener("click", () => {
     popup.style.display = "none";
@@ -49,12 +49,15 @@ function validateForm() {
 // Popup Contato
 
 let contatoWindow = document.querySelector("#contato-background")
-let x = document.querySelector(".popup-close");
+let xContato = document.querySelector("#popup-close-contato");
 let link = document.querySelector("#contato")
 
 link.addEventListener('click',()=>{
   contatoWindow.style.display = "block"
-  x.addEventListener('click',()=>{
+  xContato.addEventListener('click',()=>{
       contatoWindow.style.display = "none"
   })
 })
+
+
+

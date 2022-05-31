@@ -58,7 +58,7 @@
         <!-- Popup Contato-->
         <div id="contato-background">
           <div id="contato-container">
-            <div class="popup-close">x</div>
+            <div id="popup-close-contato">x</div>
             <div id="contato-text">
               <p>Escolha uma das opções abaixo</p>
             </div>
@@ -72,7 +72,7 @@
     <!-- Popup Cadastro-->
         <div id="popup-background">
           <div id="popup-container">
-            <div class="popup-close">x</div>
+            <div id="popup-close-cadastro">x</div>
             <div id="popup-img">
               <img src="Assets/svgimg.svg" alt="imagem de livros">
             </div>
@@ -258,12 +258,14 @@
                 </div>
             </div>
           <div id="form-notifications">
-            <form name="NL-Form" onsubmit="return validateForm()">
+            <form action="https://api.staticforms.xyz/submit" method="post" name="NL-Form" onsubmit="return validateForm()";>
+              <input type="hidden" name="accessKey" value="3cc0765e-1ec3-456b-b48e-210c325f779c">
+              <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
               <input type="text" placeholder="Seu Nome" id="name" name="name">
               <div class="empty-name">Preencha o campo vazio</div>
               <input type="email" placeholder="Seu Email" id="email" name="email">
               <div class="empty-email">Preencha o campo com um Email válido (o email está sem o "@" ou o campo está vazio ou email não existe)</div>
-              <input type="submit" placeholder="Enviar" id="send">
+              <input type="submit" placeholder="Enviar" id="send" onclick="sendEmail()">
             </form>
           </div>
         </div>
@@ -283,7 +285,6 @@
       ScrollReveal().reveal('#partner', { delay: 400 });
       ScrollReveal().reveal('#features', { delay: 400 });
   </script>
-
   </body>
 
   <!-- Rodapé do site-->
