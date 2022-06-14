@@ -18,7 +18,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color:white;
+  background-color:var(---batista-color);
+  height: 70px;
   position: sticky;
   top:0;
   z-index: 10;
@@ -48,7 +49,7 @@ a {
 }
 #menu-1 h1 {
   font-size: 1.3rem;
-  color: var(---batista-color);
+  color: white;
   font-weight: 600;
 }
 #menu-1 img{
@@ -63,7 +64,7 @@ a {
   list-style: none;
 }
 #menu-1 nav ul li a {
-  color: var(--light-color);
+  color: white;
   padding: 8px 15px;
 }
 #menu-1 nav ul li a:hover {
@@ -107,7 +108,7 @@ a {
 }
 #mobile-links nav ul li a{
   text-decoration: none;
-  color:white;
+  color:black;
   line-height: 80px;
   font-size: 2rem;
   border-bottom: 1px solid white;
@@ -119,13 +120,12 @@ a {
   width: 100%;
 }
 body{
-  background-color: var(---batista-color);
+  background-color: whitesmoke;
 }
 
-#logo img{
-  width: 180px;
-  margin:20px 0px 15px 0px;
-  border-radius: 50%;
+#menu-1 img{
+  margin-right: 15px;
+  border-radius: 100%;
 }
 #text-contact{
   text-align: center;
@@ -162,7 +162,7 @@ body{
   margin-top: 80px;
 }
 #text{
-  color: white;
+  color: var(---batista-color);
   text-align: center;
   margin-top: 30px;
   line-height: 40px;
